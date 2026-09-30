@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Class | Hogwards School System</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-hogwards">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/hogwards-logo.png" alt="Hogwards Logo">
+                Hogwards School System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teachers.html">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="add.html">Add New</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-hogwards">
+        <div class="container text-center">
+            <h1>Add New Class</h1>
+            <p class="lead">Create magical learning experiences</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card card-hogwards">
+                    <div class="card-header">
+                        <h5>Class Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <form class="form-hogwards">
+                            <div class="mb-3">
+                                <label for="className" class="form-label">Class Name</label>
+                                <input type="text" class="form-control" id="className" required>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Select Subject</option>
+                                        <option value="Maths">Maths</option>
+                                        <option value="Physics">Physics</option>
+                                        <option value="Chemistry">Chemistry</option>
+                                        <option value="Pak Studies">Pak Studies</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Robotics">Robotics</option>
+                                        <option value="Urdu">Urdu</option>
+                                        <option value="English">English</option>
+                                        <option value="Islamiyat">Islamiyat</option>
+                                        <option value="Biology">Biology</option>
+                                        <option value="Management Sciences">Management Sciences</option>
+                                        <option value="Health Sciences">Health Sciences</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="teacher" class="form-label">Teacher</label>
+                                    <input type="text" class="form-control" id="location" required>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="day" class="form-label">Day</label>
+                                    <select class="form-select" id="day" required>
+                                        <option value="">Select Day</option>
+                                        <option value="monday">Monday</option>
+                                        <option value="tuesday">Tuesday</option>
+                                        <option value="wednesday">Wednesday</option>
+                                        <option value="thursday">Thursday</option>
+                                        <option value="friday">Friday</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="startTime" class="form-label">Start Time</label>
+                                    <input type="time" class="form-control" id="startTime" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="endTime" class="form-label">End Time</label>
+                                    <input type="time" class="form-control" id="endTime" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="location" class="form-label">Location</label>
+                                <input type="text" class="form-control" id="location" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Class Description</label>
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-hogwards">Create Class</button>
+                                <a href="classes.html" class="btn btn-hogwards-outline">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-hogwards text-center mt-5">
+        <div class="container">
+            <p>&copy; 2023 Hogwards School System. All rights reserved.</p>
+            <p>Learning Made Fun</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
